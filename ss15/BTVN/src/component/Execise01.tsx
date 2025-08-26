@@ -18,7 +18,7 @@ export default class Exercise01 extends Component<{}, State> {
 
   handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log({ email: this.state.email });
+    console.log({ mail: this.state.email });
   }
   render() {
     return (

@@ -22,7 +22,7 @@ export default class Exercise03 extends Component<{},State>{
         }
 
     render(){
-        return(
+        return( 
             <>
                 <h1>{this.state.content}</h1><br></br>
                 <button onClick={this.handleChage}>Chage</button>

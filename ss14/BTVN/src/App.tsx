@@ -4,11 +4,13 @@ import Exercise03 from "./component/Exercise03"
 import Exercise04 from "./component/Exercise04"
 import Exercise05 from "./component/Exercise05"
 import GenderForm from "./component/Exercise06"
+import Form from "./component/form"
 
 function App() {
   return (
     <>
-      <Exercise01></Exercise01>
+    <Form></Form>
+      {/* <Exercise01></Exercise01> */}
       {/* <Exercise02></Exercise02>
       <Exercise03></Exercise03>
       <Exercise04></Exercise04>

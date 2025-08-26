@@ -9,11 +9,11 @@ function App() {
   return (
     <>
       {/* <Exercise01></Exercise01> */}
-      {/* <Exercise02></Exercise02> */}
+      <Exercise02></Exercise02>
       {/* <Exercise03></Exercise03>*/}
       {/* <Execise04></Execise04> */}
       {/* <Execise05></Execise05> dung chat bot  */}
-      <ListPost></ListPost>
+      {/* <ListPost></ListPost> */}
     </>
   )
 }

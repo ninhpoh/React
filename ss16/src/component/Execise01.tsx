@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { Component } from "react";
+export default class Exercise01 extends Component{
 const Exercise01 = () => {
   const subject = ["Toán", "Văn", "Anh", "Lý", "Hóa"];
 
@@ -14,5 +14,5 @@ const Exercise01 = () => {
     </div>
   );
 };
-
-export default Exercise01;
+}
+;
