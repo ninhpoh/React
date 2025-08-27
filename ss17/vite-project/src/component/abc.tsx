@@ -8,7 +8,6 @@ function Abc(props: Props){
 
     useEffect(()=>{
         console.log(`asdad`);
-        
     })
 
     const [count,setCount] = useState(0)
