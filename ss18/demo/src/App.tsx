@@ -7,7 +7,7 @@ function App() {
     <>
       {/* <Form></Form> */}
       <Demo></Demo>
-      <LoginForm></LoginForm>
+      {/* <LoginForm></LoginForm> */}
     </>
   )
 } 

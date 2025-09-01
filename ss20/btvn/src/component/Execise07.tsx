@@ -5,7 +5,7 @@ interface State{
     name: string
 }
 
-type Action = {type: "INCREASE"} | {type: "DECREASE"} | {type:"SET_NAME",payload: string}
+type Action = {type: "INCREASE"} | {type: "DECREASE"}
 
 function reducer
  (state: State,action: Action){
@@ -20,11 +20,6 @@ function reducer
                 ...state,
                 count: state.count - 1
             }
-        case "SET_NAME":
-            return {
-                ...state,
-                name: action.payload
-            }
         default: 
             return{
                 state
@@ -32,17 +27,16 @@ function reducer
     }
 }
 
-function Demo(){
+function Counter(){
     const[state,dispacth]= useReducer(reducer,{count: 0,name:``})
     return(
         <>
-            <h1>demo useReducer</h1>
+            <h1>useReducer</h1>
             <p>{state.count}</p>
             <p>{state.name}</p>
             <button onClick={()=>{dispacth({type:`INCREASE`})}}>Tang</button>
             <button onClick={()=>{dispacth({type:`DECREASE`})}}>Giam</button>
-            <button onClick={()=>{dispacth({type:`SET_NAME`,payload:`tansdasd`})}}>NAME</button>
         </>
     )
 }
-export default Demo
+export default Counter
