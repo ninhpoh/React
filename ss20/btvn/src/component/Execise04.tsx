@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 function PageTitle() {
-  const [name, setName] = useState("");
+  const [input, setInput] = useState("");
 
   useEffect(() => {
-    if (name.trim()) {
-      document.title = `${name}!`;
+    if (input.trim()) {
+      document.title = `Chao! tieu de cua ${input}!`;
     } else {
       document.title = "Chào mừng bạn đến với trang của chúng tôi!";
     }
-  }, [name]);
+  })
 
   return (
     <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
@@ -17,8 +17,8 @@ function PageTitle() {
       <input
         type="text"
         placeholder="Nhập tên của bạn..."
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
         style={{ padding: "8px", width: "100%", maxWidth: "300px" }}
       />
     </div>
